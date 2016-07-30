@@ -1,0 +1,30 @@
+﻿@font-face {font-family: 'pristina'; src: url(pristina.ttf);}
+@font-face {font-family: 'baskvill'; src: url(baskvill.ttf);}
+body {
+	background-color: #000;
+	background: url(fondoRH.jpg);
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	margin:0; padding:0;
+}
+span {float:left; margin:0; padding:0; /*outline:1px solid #999;*/ opacity:0.2;}
+object {position:absolute; right:5px;}
+.boton {font-family:pristina; text-align:center; line-height:0; position:absolute;}
+.boton:hover {letter-spacing:1px; font-weight:bold; cursor:pointer;}
+#logotexto {overflow:hidden;}
+#rhlogo, #especial {cursor:pointer;}
+#texto {
+	margin-top:4%;
+	padding-right:2%;
+	overflow-y:auto;
+	overflow-x:hidden;
+	font-family:baskvill; text-align:justify;
+	text-shadow: 0 0 4px rgba(155, 111, 55, 0.9);
+}
+p {margin-top:3%; margin-bottom:0;}
+a, #especial {text-decoration:none; font-weight:bold; color:#33C;}
+a:hover, #especial:hover {letter-spacing:1px;}

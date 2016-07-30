@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="keywords" content="Radiant, Historia, Radiant Historia, Radiant Historia español, Radiant Historia en español, Radiant Historia al español, español, fantraducción, fan traducción, Tales-Tra">
+<meta name="description" content="Fantraducción del videojuego de DS Radiant Historia al español.">
+<link rel="shortcut icon" href="rhicono.png" type="image/x-icon">
+<link rel="canonical" href="http://rh.tales-tra.com" />
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="galeria/galleria.rh.css">
+<title>Radiant Historia en español</title>
+</head>
+
+<script language="javascript" src="jquery-1.9.0.min.js"></script>
+<script language="javascript" src="ajustar.js"></script>
+<script language="javascript" src="galeria/galleria-1.2.9.min.js"></script>
+<script language="javascript" src="galeria/galleria.rh.min.js" async="async"></script>
+
+<script language="javascript">
+$(document).ready(function(){
+	var actualtab = '';
+	$('.boton').click(function(){
+		if ($(this).attr('id') != actualtab){
+			actualtab = $(this).attr('id');
+			valor=$(this).attr('rel');
+			$('#texto').stop(true,false);
+			$('#texto').animate({marginLeft:-window.innerWidth*0.2,opacity:'0'}, 900);
+			$('#texto').animate({opacity:'0'}, 1);
+			$('#texto').animate({marginLeft:'15px'}, 1, function(){$('#texto').html(valor)});
+			if ($(this).attr('id') == 'botonmenu4'){
+				Galleria.loadTheme('galeria/galleria.rh.min.js');
+				$('.galleria-gallery').galleria({
+			//		autoplay: 3000,
+			//		transition: 'fadeslide',
+					data_config: function(img) {
+						return {
+							title: $(img).attr('title'),
+							description: $(img).parents('.gallery-item').find('.gallery-caption').text()
+						};
+					}
+				});
+			}
+			$('#texto').animate({opacity:'1'}, 1500);
+		}
+	});
+	$('#rhlogo').click(function(){
+		actualtab = $(this).attr('id');
+		valor=$(this).attr('rel');
+		$('#texto').stop(true,false);
+		$('#texto').animate({marginLeft:-window.innerWidth*0.2,opacity:'0'}, 900);
+		$('#texto').animate({opacity:'0'}, 1);
+		$('#texto').animate({marginLeft:'15px'}, 1, function(){$('#texto').html(valor)});
+		$('#texto').animate({opacity:'1'}, 1500);
+	});
+});
+</script>
+
+<body>
+
+<span id="rh">
+	<span id="logotexto" onMouseDown="resize(this);">
+		<span id="rhlogo" rel="Radiant Historia es un RPG creado por Atlus en 2010 para Nintendo DS. Fue publicado en Estados Unidos, pero no en Europa, qué novedad. Así que nos reunimos cuatro gatos a los que nos gustaba el juego para traducirlo al español y que más gente pudiese disfrutarlo.
+<p>El argumento nos sitúa en mitad de un conflicto territorial entre dos potencias que buscan huir de la desertificación que asola el continente. En el juego tomamos el papel de Stocke, un hábil agente del servicio de Inteligencia con el poder de viajar en el tiempo entre dos líneas temporales. Las decisiones que tome influenciarán en gran medida los sucesos de la historia, y con el tiempo descubrirá la verdad sobre el conflicto, el continente, la desertificación y sobre sí mismo.</p>"></span>
+		<span id="texto">Radiant Historia es un RPG creado por Atlus en 2010 para Nintendo DS. Fue publicado en Estados Unidos, pero no en Europa, qué novedad. Así que nos reunimos cuatro gatos a los que nos gustaba el juego para traducirlo al español y que más gente pudiese disfrutarlo.
+<p>El argumento nos sitúa en mitad de un conflicto territorial entre dos potencias que buscan huir de la desertificación que asola el continente. En el juego tomamos el papel de Stocke, un hábil agente del servicio de Inteligencia con el poder de viajar en el tiempo entre dos líneas temporales. Las decisiones que tome influenciarán en gran medida los sucesos de la historia, y con el tiempo descubrirá la verdad sobre el conflicto, el continente, la desertificación y sobre sí mismo.</p></span>
+	</span>
+	<object type="application/x-shockwave-flash" data="dewplayer-multi.swf?mp3=mp3/WhereTheWind.mp3|mp3/RADIANTHISTORIA.mp3|mp3/MechanicalKingdom.mp3|mp3/BlueRadiance.mp3|mp3/HISTORIA.mp3&autoreplay=1" width="240" height="20" id="dewplayer-multi"><param name="wmode" value="transparent" /><param name="movie" value="dewplayer-multi.swf?mp3=mp3/WhereTheWind.mp3|mp3/RADIANTHISTORIA.mp3|mp3/MechanicalKingdom.mp3|mp3/BlueRadiance.mp3|mp3/HISTORIA.mp3" /></object>
+
+		<span class="boton" id="botonmenu1" rel='La traducción de Radiant Historia comenzó en 2011, cuando Skye decidió extraer los textos; en verano de 2012 empezamos a traducir... Bah, ¿qué os parece leer la historia de la traducción a través de este vídeo?<br><video width="100%" controls><source src="RHvideo.mp4" type="video/mp4"><source src="RHvideo.ogv" type="video/ogg"><source src="RHvideo.webm" type="video/webm">(Tu navegador web necesita actualizarse para poder visualizar este video)</video>'>Traducción</span>
+
+		<span class="boton" id="botonmenu2" rel='Y ahora, tíos y señoritas, os explicaremos cómo traducir vuestra ROM de Radiant Historia al español. ¡Está tirado!
+<p>Para traducir Radiant Historia, basta con que abráis el parcheador (disponible <a href="RadiantHistoriaParcheEsp.7z">aquí</a>), cliquéis sobre <b>Parchear</b>, seleccionéis la ROM que corresponda y le deis a <b>Aceptar</b>. El parche os avisará para quitar o poner el fix antipiratería, por si os da problemas. Así se generará otra ROM con un «(ESP)» al final del archivo. ¡Y sanseacabó!<br>
+Cualquier problema que tengáis, comentadlo en este <a href="http://foro.tales-tra.com/viewtopic.php?f=108&t=2961" target="_blank">hilo</a>.</p>
+<p>NOTA: El parcheador necesita un sistema operativo Windows con .NET Framework 4.0 instalado.</p>'>Descargar</span>
+
+		<span class="boton" id="botonmenu3" rel="Como todo buen RPG, Radiant Historia está a tope de misiones secundarias. Al completarlas desbloquearéis finales nuevos, jefes opcionales... Pero claro, hacerlas todas no es tarea fácil. Por eso hemos confeccionado una <a href='RadiantHistoriaMS.pdf' target='_blank'>guía</a> de estas misiones, para que podáis disfrutar al máximo del juego. Como el protagonista puede viajar en el tiempo, hay muy pocas misiones (por no decir ninguna) que tengan límite de tiempo. Si os habéis dejado alguna, siempre podéis volver al pasado y completarla. Eso sí, cuidado con los spoilers. Recomendamos que no consultéis esta guía si no os habéis pasado el juego antes.">Misiones</span>
+
+		<span class="boton" id="botonmenu4" rel='<div class="galleria-gallery">
+<img src="images/RH00.png">
+<img src="images/RH01.png">
+<img src="images/RH02.png">
+<img src="images/RH03.png">
+<img src="images/RH04.png">
+<img src="images/RH05.png">
+<img src="images/RH06.png">
+<img src="images/RH07.png">
+<img src="images/RH08.png">
+<img src="images/RH09.png">
+<img src="images/RH10.png">
+<img src="images/RH11.png">
+<img src="images/RH12.png">
+<img src="images/RH13.png">
+<img src="images/RH15.png">
+<img src="images/RH16.png">
+<img src="images/RH17.png">
+<img src="images/RH18.png">
+<img src="images/RH19.png">
+<img src="images/RH20.png">
+<img src="images/RH21.png">
+<img src="images/RH22.png">
+<img src="images/RH23.png">
+<img src="images/RH25.png">
+<img src="images/RH26.png">
+<img src="images/RH27.png">
+<img src="images/RH28.png">
+<img src="images/RH29.png"></div>'>Galería</span>
+
+		<span class="boton" id="botonmenu5" rel="<b>Traducción:</b> Lia, Memnoch, Old Warrior<br>
+<b>Revisión y QA:</b> Memnoch, Lia<br>
+<b>Testeo:</b> Memnoch, Lia, Old Warrior, Skye<br>
+<b>Programación:</b> Skye, CUE<br>
+<b>Edición de imágenes:</b> Skye, Memnoch<br>
+<b>Página web:</b> Kurim, Lia, Memnoch<br>
+<b>Herramientas utilizadas:</b> Atlus Packer (CUE & Skye), Tinke (pleonex), ACME2 (soywiz), Radiant Historia Script Dumper (CUE)<br>
+<br><br><br><div id='especial' rel='A Skye, por ser la primera en empezar todo este tinglado. Gracias a ella se pudo editar el juego hasta dejarlo de la mejor forma posible.</p>
+<p>A Sebastian, el mayordomo imaginario de Skye que se inventaron Lia y Memnoch, por darle cada noche en una sesión de canibalismo los nutrientes necesarios para programar sin parar.</p>
+<p>A Lia, por su constancia sin par en la traducción y por sus grandes aportaciones en muchísimos otros aspectos del proyecto. Sin ella esta traducción no habría salido adelante.</p>
+<p>A Memnoch, por revisar como si no existiera el mañana, por ayudar en básicamente todo, por meter siempre ánimos al equipo, por hacernos reír, y por todo eso que él no dará importancia pero que ha sido muy especial para nosotros, lo crea o no.</p>
+<p>Agradecemos a CUE la ayuda prestada en la investigación inicial del juego y la programación de las herramientas utilizadas en la traducción.</p>
+<p>A Kurim, por dejarse los higadillos programando la página web bajo la presión constante de Lia.</p>
+<p>A PacoChan por su gran ayuda a la hora de subir la página web que estáis viendo y unificar el parche.</p>
+<p>De verdad, Sebastian, muchas gracias por hacer de Prometeo, tío. Como tú no hay otro, gracias de corazón (el que se zampaba Skye cada día).</p>'>Agradecimientos especiales</div>
+<script>
+$('#especial').click(function(){
+	actualtab = $(this).attr('id');
+	valor=$(this).attr('rel');
+	$('#texto').stop(true,false);
+	$('#texto').animate({marginLeft:'-180px',opacity:'0'}, 900);
+	$('#texto').animate({opacity:'0'}, 1);
+	$('#texto').animate({marginLeft:'15px'}, 1, function(){$('#texto').html(valor)});
+	$('#texto').animate({opacity:'1'}, 1500);
+});
+</script>
+">Créditos</span>
+
+</span>
+
+<script language="javascript">
+window.onload = function() {
+	if (jQuery.support.htmlSerialize) {
+		resize();
+	}else{
+		alert("Utiliza un navegador web más decente como por ejemplo: Google Chrome, Mozilla Firefox, Opera, etc");
+		window.location.href('https://www.google.com/intl/es/chrome/browser/')
+	}
+}
+window.onresize = function() {
+	resize();
+}
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37460810-3', 'tales-tra.com');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
